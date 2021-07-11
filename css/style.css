@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Font colors */
+/* Background colors */
+/* @media (min-width: 64em){
+    // styles go here
+} */
+.main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  padding: 5.5rem 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 40em) {
+  .card {
+    padding: 10.6875rem 8.0625rem 16.3125rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    width: 57.4375rem;
+  }
+}
+
+.card__one {
+  padding: 3rem;
+  background-color: #e38826;
+  color: rgba(255, 255, 255, 0.75);
+  height: 27.625rem;
+  width: 20.4375;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media (min-width: 40em) {
+  .card__one {
+    height: 31.1875rem;
+    width: 19.3125rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+}
+
+.card__one h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.0625rem;
+  text-transform: uppercase;
+}
+
+.card__one p {
+  word-spacing: 1px;
+}
+
+.card__one .btn {
+  margin-top: 3.21875rem;
+}
+
+@media (min-width: 40em) {
+  .card__one .btn {
+    margin-top: 5.21875rem;
+  }
+}
+
+.card__one .btn a {
+  border: 1px solid #f2f2f2;
+  padding: 1.1875rem 2.0625rem;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  color: #e38826;
+  letter-spacing: 1px;
+}
+
+.card__one .btn a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #f2f2f2;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+.card__two {
+  padding: 3rem;
+  background-color: #006970;
+  color: rgba(255, 255, 255, 0.75);
+  height: 27.625rem;
+  width: 20.4375;
+}
+
+@media (min-width: 40em) {
+  .card__two {
+    height: 31.1875rem;
+    width: 19.3125rem;
+  }
+}
+
+.card__two h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.0625rem;
+  text-transform: uppercase;
+}
+
+.card__two p {
+  word-spacing: 1px;
+}
+
+.card__two .btn {
+  margin-top: 3.21875rem;
+}
+
+@media (min-width: 40em) {
+  .card__two .btn {
+    margin-top: 5.21875rem;
+  }
+}
+
+.card__two .btn a {
+  border: 1px solid #f2f2f2;
+  padding: 1.1875rem 2.0625rem;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  color: #e38826;
+  letter-spacing: 1px;
+}
+
+.card__two .btn a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #f2f2f2;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+.card__three {
+  padding: 3rem;
+  background-color: #004241;
+  color: rgba(255, 255, 255, 0.75);
+  height: 27.625rem;
+  width: 20.4375;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 40em) {
+  .card__three {
+    height: 31.1875rem;
+    width: 19.3125rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.card__three h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.0625rem;
+  text-transform: uppercase;
+}
+
+.card__three p {
+  word-spacing: 1px;
+}
+
+.card__three .btn {
+  margin-top: 3.21875rem;
+}
+
+@media (min-width: 40em) {
+  .card__three .btn {
+    margin-top: 5.21875rem;
+  }
+}
+
+.card__three .btn a {
+  position: relative;
+  border: 1px solid #f2f2f2;
+  padding: 1.1875rem 2.0625rem;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  color: #e38826;
+  letter-spacing: 1px;
+}
+
+.card__three .btn a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #f2f2f2;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}

@@ -1,0 +1,176 @@
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 5.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    @include breakpoint-up(medium) {
+        padding: 10.6875rem 8.0625rem 16.3125rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 57.4375rem;
+    }
+
+    &__one{ 
+        padding: 3rem;
+        background-color: hsl(31, 77%, 52%);
+        color: $transparentWhite;
+        height: 27.625rem;
+        width: 20.4375;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        @include breakpoint-up(medium) {
+            height: 31.1875rem;
+            width: 19.3125rem;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 0px;
+
+        }
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 2.0625rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            word-spacing: 1px;
+        }
+        .btn {
+            margin-top: 3.21875rem;
+
+            @include breakpoint-up(medium) {
+                margin-top: 5.21875rem;
+            }
+
+            a {
+                border: 1px solid $veryLightGrey;
+                padding: 1.1875rem 2.0625rem;
+                text-decoration: none;
+                border-radius: 50px;
+                background-color: $veryLightGrey;
+                color: $brightOrange;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, 0);
+                    color: $veryLightGrey;
+                    transition: background-color 150ms ease-in-out;
+                }
+            }
+        }
+    }
+
+    &__two{ 
+        padding: 3rem;
+        background-color: $darkCyan;
+        color: $transparentWhite;
+        height: 27.625rem;
+        width: 20.4375;
+
+        @include breakpoint-up(medium) {
+            height: 31.1875rem;
+            width: 19.3125rem;
+        }
+
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 2.0625rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            word-spacing: 1px;
+        }
+        .btn {
+            margin-top: 3.21875rem;
+
+            @include breakpoint-up(medium) {
+                margin-top: 5.21875rem;
+            }
+
+            a {
+                border: 1px solid $veryLightGrey;
+                padding: 1.1875rem 2.0625rem;
+                text-decoration: none;
+                border-radius: 50px;
+                background-color: $veryLightGrey;
+                color: $brightOrange;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, 0);
+                    color: $veryLightGrey;
+                    transition: background-color 150ms ease-in-out;
+                }
+            }
+        }
+    }
+
+    &__three{ 
+        padding: 3rem;
+        background-color: $veryDarkCyan;
+        color: $transparentWhite;
+        height: 27.625rem;
+        width: 20.4375;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        @include breakpoint-up(medium) {
+            height: 31.1875rem;
+            width: 19.3125rem;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 0;
+        }
+
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 2.0625rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            word-spacing: 1px;
+        }
+        .btn {
+            margin-top: 3.21875rem;
+
+            @include breakpoint-up(medium) {
+                margin-top: 5.21875rem;
+            }
+
+            a {
+                position: relative;
+                border: 1px solid $veryLightGrey;
+                padding: 1.1875rem 2.0625rem;
+                text-decoration: none;
+                border-radius: 50px;
+                background-color: $veryLightGrey;
+                color: $brightOrange;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, 0);
+                    color: $veryLightGrey;
+                    transition: background-color 150ms ease-in-out;
+                }
+            }
+        }
+    }
+
+    
+}
